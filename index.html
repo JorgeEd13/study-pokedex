@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+
+    <link rel="icon" href="./src/assets/images/favicon-16x16.png">
+
+    <link rel="stylesheet" href="./src/css/style.css">
+
+    <script defer src="./src/js/main.js"></script> <!-- 'defer' é utilizado para evitar erros colocando o script antes do body -->
+</head>
+
+<body>
+    <main>
+        <img src="#" alt="pokemon" class="pokemonImg" id="pokeImg">
+
+        <h1 class="pokemonData">
+            <span class="pokemonId" id="pokeNumber"></span> -
+            <span class="pokemonName" id="pokeName"></span>
+        </h1>
+
+        <form class="pokeSearch" id="pokeForm">
+            <input type="search" 
+            class="inputSearch" 
+            placeholder="Name or Number" 
+            required
+            id="inputForm"
+            />
+        </form>
+
+        <div class="buttons">
+            <button class="button" id="buttonPrev">&lt; Prev</button> <!-- Botão 'Prev <', sem utilizar <, pois poder gerar erros. Ver: html entities. -->
+            <button class="button" id="buttonNext">Next &gt;</button> <!-- Botão 'Next >', sem utilizar >, pois poder gerar erros. Ver: html entities. -->
+        </div>
+
+        <img src="./src/assets/images/pokedex.png" alt="pokedex" class="pokedexBody">
+    </main>
+    <script src="./src/js/main.js"></script>
+</body>
+
+</html>

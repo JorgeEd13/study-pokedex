@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxanium', cursive;
+}
+
+body {
+    text-align: center;
+    background: linear-gradient(to bottom, #6ab7f5, #fff);
+    min-height: 100vh;
+}
+
+main {
+    display: inline-block;
+    margin-top: 2%;
+    padding: 1rem;
+    position: relative;
+}
+
+.pokedexBody {
+    width: 100%;
+    max-width: 26.5rem;
+}
+
+.pokemonImg {
+    position: absolute;
+    bottom: 55%;
+    left: 50%;
+    /*relativas a tag main*/
+    transform: translate(-63%, 20%);
+    /*relativa ao tamanho da imagem do pokemon. transform: translate(x, y); */
+    height: 18%;
+}
+
+.pokemonData {
+    position: absolute;
+    font-weight: 600;
+    color: #aaa;
+    top: 54.4%;
+    right: 27%;
+    font-size: clamp(0.5rem, 5vw, 1.5rem); /*clamp(min, default, max);*/
+}
+
+.pokemonName {
+    color: #555;
+    text-transform: capitalize;
+}
+
+.pokeSearch {
+    position: absolute;
+    width: 65%;
+    top: 63%;
+    left: 13%;
+}
+
+.inputSearch {
+    width: 100%;
+    padding: 2%;
+    outline: none;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #555;
+    font-size: clamp(0.5rem, 5vw, 1rem);
+    box-shadow: -3px 4px 0 #888, -5px 7px 0 #333; /* box-shadow: x y 'tamanho da sombra/desfoque' 'cor da sombra';*/
+}
+
+.buttons {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    width: 65%;
+    transform: translate(-57%, 0);
+    display: flex;
+    gap: 1.25rem;
+}
+
+.button {
+    width: 100%;
+    padding: 2%;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: clamp(0.5rem, 5vw, 1rem);
+    font-weight: 600;
+    color: #fff;
+    background-color: #444;
+    box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+}
+
+.button:active {
+    box-shadow: inset -4px 4px 0 #222;
+    font-size: 0.9rem;
+}
